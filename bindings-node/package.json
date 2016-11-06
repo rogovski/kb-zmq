@@ -1,0 +1,24 @@
+{
+  "name": "bindings-node",
+  "version": "0.0.1",
+  "description": "node zmq examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "zmq"
+  ],
+  "author": "rogovski",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "msgpack": "^1.0.2",
+    "node-uuid": "^1.4.7",
+    "sharp": "^0.16.2",
+    "socket.io": "^1.5.1",
+    "zmq": "^2.15.3"
+  }
+}

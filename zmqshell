@@ -1,0 +1,26 @@
+#!/bin/bash
+
+cdir=$(pwd)
+
+# docker run -it --rm -p 8888:8888 -v $cdir:/opt/zmqsrc rogovski/tensorflow /bin/bash
+
+# docker run                              \
+#   -it                                   \
+#   --rm                                  \
+#   -p 8844:8844                          \
+#   -v $cdir:/opt/zmqsrc                  \
+#   --link tfshell:rogovski/tensorflow    \
+#   --name zmqshell                       \
+#   rogovski/tensorflow                   \
+#   /bin/bash
+
+
+docker run                              \
+  -it                                   \
+  --rm                                  \
+  -p 8844:8844                          \
+  -v $cdir:/opt/zmqsrc                  \
+  --link tfshell:rogovski/tensorflow    \
+  --name zmqshell                       \
+  rogovski/node6                        \
+  /bin/bash
